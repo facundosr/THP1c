@@ -29,7 +29,7 @@ public class Ejercicio_07 {
 		metrosAlambre = ((ancho*2) + (largo*2)) * 3;
 		
 		System.out.println("Valor total del terreno: $" + valorTotal);
-		System.out.println("Metros de alambre para 3 vueltas: " + metrosAlambre + " metros,");
+		System.out.println("La cantidad de metros de alambre necesarios para dar 3 vueltas a alturas diferentes es: " + metrosAlambre + " metros,");
 		
 		
 		input.close();
