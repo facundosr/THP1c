@@ -32,7 +32,8 @@ public class Ejercicio_07 {
 		System.out.println("Metros de alambre para 3 vueltas: " + metrosAlambre + " metros,");
 		
 		
-		
+		input.close();
+
 		
 		
 
