@@ -1,11 +1,39 @@
 package edu.ort.thp.tp1;
-
 import java.util.Scanner;
 
 public class Ejercicio_08 {
 
 	private static Scanner input = new Scanner(System.in);
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
+		Integer numero1, numero2, resultadoSuma, resultadoResta, resultadoMulti, resultadoDiv;
+		
+		//ingresar numero1
+		System.out.println("Ingrese primer número:");
+		numero1 = Integer.parseInt(input.nextLine());
+		
+		//ingresar numero2
+		System.out.println("Ingrese segundo número:");
+		numero2 = Integer.parseInt(input.nextLine());
+
+		//suma
+		resultadoSuma = numero1 + numero2;		
+		
+		//resta
+		resultadoResta = numero1 - numero2;		
+		
+		//division
+		resultadoMulti = numero1 * numero2;
+		
+		//multiplicacion
+		resultadoDiv = numero1 / numero2;
+		
+		System.out.println( numero1 + " + " + numero2 + " es igual a: " + resultadoSuma);
+		System.out.println( numero1 + " - " + numero2 + " es igual a: " + resultadoResta);
+		System.out.println( numero1 + " * " + numero2 + " es igual a: " + resultadoMulti);
+		System.out.println( numero1 + " / " + numero2 + " es igual a: " + resultadoDiv);
+		
+		
+		
 		
 		
 		
