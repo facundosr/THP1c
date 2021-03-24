@@ -13,7 +13,7 @@ public class Ejercicio_04 {
 		double horasTrabajadas;
 		double salarioSemanal;
 		
-		//Ingreso el valor de la hota
+		//Ingreso el valor de la hora
 		System.out.println("Ingrese el valor de la hora");
 		valorHora = Double.parseDouble(input.nextLine());
 		
