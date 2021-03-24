@@ -37,7 +37,7 @@ public class Ejercicio_20 {
 			dia = "El día de la semana es Sábado";
 			break;
 		default:
-			dia = "entrada inválida";
+			dia = "Entrada inválida";
 		}
 		
 		System.out.println(dia);
