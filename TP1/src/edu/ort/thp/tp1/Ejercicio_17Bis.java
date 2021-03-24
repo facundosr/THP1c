@@ -38,7 +38,7 @@ public class Ejercicio_17Bis {
 				break;
 				
 			default:
-				mensErr = "Género Errónea";				
+				mensErr = "Género Erróneo";				
 			}
 
 		} else {

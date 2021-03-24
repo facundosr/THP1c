@@ -21,24 +21,19 @@ public class Ejercicio_24 {
 			num2 = Integer.parseInt(input.nextLine());
 			
 		}
-		System.out.println("******INCLUYENDOLOS*******");
+		System.out.println("_******INCLUYENDOLOS*******_");
 
 		for (int i = num1; i <= num2; i++) {
 			System.out.println(i);
 		}
 		
-		System.out.println("******EXCLUYENDOLOS*******");
-
-
+		System.out.println("_******EXCLUYENDOLOS*******_");
 		
 		for (int i = num1+1; i < num2; i++) {
 			System.out.println(i);
 		}
 		
-		
-		
-	
-		
+			
 	}
 
 }
