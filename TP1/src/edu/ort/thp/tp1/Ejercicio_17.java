@@ -13,7 +13,7 @@ public class Ejercicio_17 {
 
 	public static void main(String[] args) {
 		int edad;
-		char gen;
+		String gen;
 		String mensErr = "";
 		String jub = "NEGATIVO";
 
@@ -22,21 +22,22 @@ public class Ejercicio_17 {
 
 		if (edad >= EDAD_MIN && edad <= EDAD_MAX) {
 			System.out.println("Ingrese un género 'F' para mujer y 'M' para hombre");
-			gen = input.nextLine().toUpperCase().charAt(0);
+			gen = input.nextLine().toUpperCase();
 			
-			if (gen == 'M') {
+			if (gen.equals("M")) {
 
 				if (edad >= EDAD_M) {
 					jub = "AFIRMATIVO";
 				} 
 				
-			} else if (gen == 'F') {
+			} else if (gen.equals("F")) {
 
 				if (edad >= EDAD_F) {
 					jub = "AFIRMATIVO";
 				} 
+				
 			} else {
-				mensErr = "Género erróneo";
+				mensErr = "Género Erróneo";
 			}
 		} else {
 			mensErr = "Edad errónea";

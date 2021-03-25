@@ -21,6 +21,7 @@ public class Ejercicio_17Bis {
 		edad = Integer.parseInt(input.nextLine());
 
 		if (edad >= EDAD_MIN && edad <= EDAD_MAX) {
+			
 			System.out.println("Ingrese un género 'F' para mujer y 'M' para hombre");
 			gen = input.nextLine().toUpperCase().charAt(0);		
 			
