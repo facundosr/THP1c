@@ -20,7 +20,7 @@ public class Ejercicio_19 {
 		esDeUnSoloDigito = numero > -10 && numero < 10;
 		esImpar = numero % 2 !=0;
 		estaEnAmbos = esDeUnSoloDigito && esImpar;
-		noEstaEnNinguno = !esDeUnSoloDigito && !esImpar;
+		noEstaEnNinguno = !estaEnAmbos;
 		
 		System.out.println("Es de un solo dígito " + esDeUnSoloDigito);
 		System.out.println("Es impar " + esImpar);
