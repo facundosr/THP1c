@@ -26,6 +26,7 @@ public class Ejercicio_17Bis {
 			gen = input.nextLine().toUpperCase().charAt(0);		
 			
 			switch (gen) {
+			
 			case 'M':
 				if (edad >= EDAD_M) {
 					jub = "AFIRMATIVO";
