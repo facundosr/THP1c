@@ -11,57 +11,62 @@ public class Ejercicio_30 {
 		double resul = 0;
 		String msj = "";
 		
-		System.out.println("¿Quiere realizar alguna operación?");
+		
+		System.out.println("Ingrese la operación que desea realizar '+' '-' '*' '/' o 'F' para cancelar");
+		op = input.nextLine().toUpperCase().charAt(0);	
 		
 		
-		
-		System.out.println("Ingrese el primer número");
-		num1 =  Integer.parseInt(input.nextLine());
-		
-		System.out.println("Ahora ingrese el operador '+' '-' '*' '/'");
-		op = input.nextLine().charAt(0);
+		while (op != 'F') {
+			
+resul = 0;
+			
+			System.out.println("Ingrese el primer número");
+			num1 =  Integer.parseInt(input.nextLine());
+			
+			System.out.println("Ingrese el segundo número");
+			num2 =  Integer.parseInt(input.nextLine());		
+			
+			
+			switch (op) {
+				case '+':
+					resul = num1 + num2;
+					break;
+				case '-':
+					resul = num1 - num2;
+					break;
+				case '*':
+					resul = num1 * num2;
+					break;
+				case '/':
+					
+					if (num2 == 0) {
+						msj = "Error, No se puede dividir por 0";
+					} else {
+						resul = num1 / num2;
+					}
+					break;
+				default:
+					System.out.println("Operador incorrecto, ingrese '+' '-' '*' '/' ");
+					break;	
+
 				
-		System.out.println("Ingrese el segundo número");
-		num2 =  Integer.parseInt(input.nextLine());
-		
-		
-		
-		
-		
-		switch (op) {
-			case '+':
-				resul = num1 + num2;
-				break;
-			case '-':
-				resul = num1 - num2;
-				break;
-			case '*':
-				resul = num1 * num2;
-				break;
-			case '/':
-				
-				if (num2 == 0) {
-					System.out.println("Error, No se puede dividir por 0");
+			}
+
+				if	(msj.equals("")) {
+					System.out.println(resul);
 				} else {
-					resul = num1 / num2;
+					System.out.println(msj);
+
 				}
-				break;
-			default:
-				System.out.println("Operador incorrecto, ingrese '+' '-' '*' '/' ");
-				break;	
-			case 'F':
-				msj = "Hasta Luego"
-				;
-				break;
+				
+			
+				System.out.println("Ingrese la operación que desea realizar '+' '-' '*' '/' o 'F' para cancelar");
+				op = input.nextLine().toUpperCase().charAt(0);		
 			
 		}
+			
+		System.out.println("Cerrando calculadora...");
 
-			if	(msj.equals("")) {
-				System.out.println(resul);
-			} else {
-				System.out.println(msj);
-
-			}
 		
 	}
 
