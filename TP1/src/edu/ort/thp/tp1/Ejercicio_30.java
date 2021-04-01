@@ -36,7 +36,6 @@ public class Ejercicio_30 {
 				resul = num1 * num2;
 				break;
 			case '/':
-
 				if (num2 == 0) {
 					msj = "Error, No se puede dividir por 0";
 				} else {

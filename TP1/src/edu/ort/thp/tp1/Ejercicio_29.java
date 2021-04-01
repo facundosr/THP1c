@@ -34,6 +34,8 @@ public class Ejercicio_29 {
 			nota = Integer.parseInt(input.nextLine());
 
 		}
+		
+		System.out.println("Nota cargada exitosamente");
 
 	}
 
