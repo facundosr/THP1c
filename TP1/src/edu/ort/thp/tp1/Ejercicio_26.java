@@ -11,31 +11,23 @@ public class Ejercicio_26 {
 	 * 
 	 */
 	private static Scanner input = new Scanner(System.in);
-	public static final int MULTIPLO= 3;
+	public static final int MULTIPLO = 3;
 	public static final int MULT_EXC = 5;
 
-	
 	public static void main(String[] args) {
 		int num1;
-		
-		
+
 		System.out.println("Ingrese un numero natural para mostrar la cant. de multiplos de 3");
 		num1 = Integer.parseInt(input.nextLine());
 
+		for (int i = 1; i <= num1; i++) {
 
-		for (int i=1; i <= num1; i++ ) {
-			
-			if( i % MULT_EXC != 0 ) {
-				
+			if (i % MULT_EXC != 0) {
+
 				System.out.println(MULTIPLO * i);
-			} 
+			}
 		}
-		
-		
-		
-		
-		
-		
+
 	}
 
 }
