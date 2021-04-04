@@ -10,18 +10,18 @@ public class Ejercicio_15 {
 
 	public static void main(String[] args) {
 		
-		String continuar;
+		char continuar;
 		int edad;
 		float altura;
 		String nombre;
 	
 		
 		System.out.println("Bienvenido al verificador de estatura y edad, ¿Desea ingresar una persona? s/n");
-		continuar = input.nextLine();
+		continuar = input.nextLine().toUpperCase().charAt(0);
 		
 		
 		
-		while(continuar.equals("s")) {
+		while(continuar == 'S') {
 			System.out.println("Ingrese el nombre");
 			nombre = input.nextLine();
 			
@@ -32,14 +32,14 @@ public class Ejercicio_15 {
 			altura = Float.parseFloat(input.nextLine());
 			
 			if (edad >= EDAD_MINIMA || altura > ALTURA_MINIMA ) {
-				System.out.println(nombre + " " + edad + " año/s " + altura + "m." +" ¿Entra al juego?  " + "V");
+				System.out.println(nombre + " " + edad + " año/s " + altura + "m." +" ¿Entra al juego?  " + "SI");
 				
 			} else {
-				System.out.println(nombre + " " + edad + " año/s " + altura + "m." +" ¿Entra al juego?  " + "F");
+				System.out.println(nombre + " " + edad + " año/s " + altura + "m." +" ¿Entra al juego?  " + "NO");
 			}
 			
 			System.out.println("Desea veririficar otra persona? s/n");
-			continuar = input.nextLine();
+			continuar = input.nextLine().toUpperCase().charAt(0);
 
 		}
 		

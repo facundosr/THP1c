@@ -17,7 +17,7 @@ public class Ejercicio_32 {
 
 			
 			
-			System.out.println("Error, la nota debe ser entre 0 y 10");
+			System.out.println("Error, la nota debe ser entre 0 y 10, excepto 0-1-3-4");
 			nota = Integer.parseInt(input.nextLine());
 
 		}
