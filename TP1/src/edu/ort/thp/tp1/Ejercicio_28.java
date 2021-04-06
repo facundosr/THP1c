@@ -12,8 +12,8 @@ public class Ejercicio_28 {
 	public static void main(String[] args) {
 		int cant;
 		int numIngresado;
-		int numMayor = 0;
-		int posicion = 0;
+		int numMayor = Integer.MIN_VALUE;
+		int posicion = Integer.MIN_VALUE;
 
 		System.out.println("Ingrese la cantidad de números que desea cargar");
 		cant = input.nextInt();
