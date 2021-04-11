@@ -24,11 +24,11 @@ public class Ejercicio_37 {
 			}
 
 		} while (contador < CANT_SUELDOS_MAXIMA && sueldo > 0);
-		
-		if(contador == 1) {
+
+		if (contador == 1) {
 			System.out.println("El único sueldo ingresado es de: $" + sumaSueldos);
 		} else if (contador > 1) {
-		System.out.println("La suma de los " + contador + " sueldos ingresados da $" + sumaSueldos);
+			System.out.println("La suma de los " + contador + " sueldos ingresados da $" + sumaSueldos);
 		} else {
 			System.out.println("No se han ingresado sueldos");
 		}
