@@ -13,7 +13,7 @@ public class Ejercicio_38 {
 
 		String usuarioIngresado = "";
 		String passwordIngresado = "";
-		boolean entrada = false;
+		boolean acceso = false;
 		int intentos = 3;
 
 		do {
@@ -23,15 +23,17 @@ public class Ejercicio_38 {
 			passwordIngresado = input.nextLine();
 
 			if (USUARIO.equals(usuarioIngresado) && PASSWORD.equals(passwordIngresado)) {
-				entrada = true;
+				acceso = true;
 			} else {
-				intentos -= 1;
+				intentos--;
+				System.out.println("");
 				System.out.println("Usuario o contraseña incorrecta, le quedan " + intentos + " intentos");
+				System.out.println("");
 			}
-		} while (entrada == false && intentos > 0);
+		} while (acceso == false && intentos > 0);
 
-		if (entrada == true) {
-			System.out.println("Acceso condedido");
+		if (acceso == true) {
+			System.out.println("Acceso concedido");
 		} else {
 			System.out.println("Se ha bloqueado el acceso");
 		}
