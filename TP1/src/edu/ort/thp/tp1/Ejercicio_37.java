@@ -16,7 +16,7 @@ public class Ejercicio_37 {
 
 		do {
 			System.out.println("Ingrese el sueldo nro: " + (contador + 1));
-			sueldo = Integer.parseInt(input.nextLine());
+			sueldo = Double.parseDouble(input.nextLine());
 
 			if (sueldo > 0) {
 				sumaSueldos += sueldo;
@@ -24,7 +24,14 @@ public class Ejercicio_37 {
 			}
 
 		} while (contador < CANT_SUELDOS_MAXIMA && sueldo > 0);
-		System.out.println("La suma de los " + contador + " sueldos ingresados da " + sumaSueldos);
+		
+		if(contador == 1) {
+			System.out.println("El único sueldo ingresado es de: $" + sumaSueldos);
+		} else if (contador > 1) {
+		System.out.println("La suma de los " + contador + " sueldos ingresados da $" + sumaSueldos);
+		} else {
+			System.out.println("No se han ingresado sueldos");
+		}
 	}
 
 }
