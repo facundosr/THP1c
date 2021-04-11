@@ -12,14 +12,13 @@ public class Ejercicio_33bis {
 		double numMayor;
 		double numMenor;
 
-		
 		System.out.println("Ingrese un número o [0] para salir");
 		num = Integer.parseInt(input.nextLine());
 		numMayor = num;
 		numMenor = num;
-		
+
 		while (num != 0) {
-			
+
 			if (num > numMayor) {
 				numMayor = num;
 			} else {
@@ -29,7 +28,7 @@ public class Ejercicio_33bis {
 			num = Integer.parseInt(input.nextLine());
 
 		}
-		
+
 		if (numMayor != 0) {
 			System.out.println("El mayor es " + numMayor + " y el menor es " + numMenor);
 		} else {

@@ -13,18 +13,16 @@ public class Ejercicio_29 {
 
 	public static void main(String[] args) {
 
-		int nota;		
-		
+		int nota;
+
 		/*
-		do {
-			System.out.println("Ingrese una nota entre 0 y 10");
-			nota = Integer.parseInt(input.nextLine());
-			
-		} while (nota < 0 || nota > 10);
-		
-		*/
-		
-		
+		 * do { System.out.println("Ingrese una nota entre 0 y 10"); nota =
+		 * Integer.parseInt(input.nextLine());
+		 * 
+		 * } while (nota < 0 || nota > 10);
+		 * 
+		 */
+
 		System.out.println("Ingrese una nota entre 0 y 10");
 		nota = Integer.parseInt(input.nextLine());
 
@@ -34,7 +32,7 @@ public class Ejercicio_29 {
 			nota = Integer.parseInt(input.nextLine());
 
 		}
-		
+
 		System.out.println("Nota cargada exitosamente");
 
 	}

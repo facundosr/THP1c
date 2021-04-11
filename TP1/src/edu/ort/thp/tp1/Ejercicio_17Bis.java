@@ -21,35 +21,35 @@ public class Ejercicio_17Bis {
 		edad = Integer.parseInt(input.nextLine());
 
 		if (edad >= EDAD_MIN && edad <= EDAD_MAX) {
-			
+
 			System.out.println("Ingrese un género 'F' para mujer y 'M' para hombre");
-			gen = input.nextLine().toUpperCase().charAt(0);		
-			
+			gen = input.nextLine().toUpperCase().charAt(0);
+
 			switch (gen) {
-			
+
 			case 'M':
 				if (edad >= EDAD_M) {
 					jub = "AFIRMATIVO";
 				}
 				break;
-				
+
 			case 'F':
 				if (edad >= EDAD_F) {
 					jub = "AFIRMATIVO";
 				}
 				break;
-				
+
 			default:
-				mensErr = "Género Erróneo";				
+				mensErr = "Género Erróneo";
 			}
 
 		} else {
 			mensErr = "Edad errónea";
 		}
-		
+
 		if (mensErr.equals("")) {
 			System.out.println("Está en edad para jubilarse? -> " + jub);
-			
+
 		} else {
 			System.out.println(mensErr);
 		}

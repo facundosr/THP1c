@@ -32,7 +32,7 @@ public class Ejercicio_36 {
 		int contPaq = 0;
 		double totalRec = 0;
 		double precioPaquete;
-		double paqMayorMonto = 0; 
+		double paqMayorMonto = 0;
 		int cantPasajerosTotal = 0;
 		String nombreDestino = "";
 		String destMayorMonto = "";
@@ -45,13 +45,10 @@ public class Ejercicio_36 {
 
 		System.out.println("*** Destinos y precios ***");
 		System.out.println();
-		
-		
-		System.out.println("1 -" + NOMBRE_DESTINO_1 + "($" + PRECIO_POR_PASAJERO_1 + ")\n"
-				+ "2 - " + NOMBRE_DESTINO_2 + "($" + PRECIO_POR_PASAJERO_2 + ")\n"
-				+ "3 - " + NOMBRE_DESTINO_3 + "($" + PRECIO_POR_PASAJERO_3 + ")\n"
-				+ "4 - " + NOMBRE_DESTINO_4 + "($" + PRECIO_POR_PASAJERO_4 + ")\n"
-				+ "0 - " + "TERMINAR CARGA");
+
+		System.out.println("1 -" + NOMBRE_DESTINO_1 + "($" + PRECIO_POR_PASAJERO_1 + ")\n" + "2 - " + NOMBRE_DESTINO_2
+				+ "($" + PRECIO_POR_PASAJERO_2 + ")\n" + "3 - " + NOMBRE_DESTINO_3 + "($" + PRECIO_POR_PASAJERO_3
+				+ ")\n" + "4 - " + NOMBRE_DESTINO_4 + "($" + PRECIO_POR_PASAJERO_4 + ")\n" + "0 - " + "TERMINAR CARGA");
 		;
 
 		System.out.println("Atención precio promocional a " + PAQUETE_PROMOCION);
@@ -115,7 +112,6 @@ public class Ejercicio_36 {
 			// CONTADOR PASAJEROS
 			cantPasajerosTotal += cantPasajeros;
 
-
 			System.out.println();
 			System.out.println("********************");
 			System.out.println();
@@ -127,10 +123,9 @@ public class Ejercicio_36 {
 			System.out.println("*** Destinos y precios ***");
 			System.out.println();
 
-			System.out.println("1 -" + NOMBRE_DESTINO_1 + "($" + PRECIO_POR_PASAJERO_1 + ")\n"
-					+ "2 - " + NOMBRE_DESTINO_2 + "($" + PRECIO_POR_PASAJERO_2 + ")\n"
-					+ "3 - " + NOMBRE_DESTINO_3 + "($" + PRECIO_POR_PASAJERO_3 + ")\n"
-					+ "4 - " + NOMBRE_DESTINO_4 + "($" + PRECIO_POR_PASAJERO_4 + ")\n"
+			System.out.println("1 -" + NOMBRE_DESTINO_1 + "($" + PRECIO_POR_PASAJERO_1 + ")\n" + "2 - "
+					+ NOMBRE_DESTINO_2 + "($" + PRECIO_POR_PASAJERO_2 + ")\n" + "3 - " + NOMBRE_DESTINO_3 + "($"
+					+ PRECIO_POR_PASAJERO_3 + ")\n" + "4 - " + NOMBRE_DESTINO_4 + "($" + PRECIO_POR_PASAJERO_4 + ")\n"
 					+ "0 - " + "TERMINAR CARGA");
 			System.out.println("Atención precio promocional a " + PAQUETE_PROMOCION);
 
@@ -148,13 +143,13 @@ public class Ejercicio_36 {
 
 		System.out.println("Total de Paquetes hoy: " + contPaq);
 		System.out.println("Total recaudado: " + totalRec);
-		System.out.println("Paquete de mayor monto: " + destMayorMonto + " por " + paqMayorMonto + " a mombre de: " + nombPaqMayorMonto);
-		
+		System.out.println("Paquete de mayor monto: " + destMayorMonto + " por " + paqMayorMonto + " a mombre de: "
+				+ nombPaqMayorMonto);
+
 		// PROMEDIO INVERTIDO POR PASAJERO
 		montoTotal = totalRec / cantPasajerosTotal;
 		System.out.println("Monto promedio invertido por pasajero: " + montoTotal);
-		
-		
+
 		System.out.println();
 		System.out.println();
 

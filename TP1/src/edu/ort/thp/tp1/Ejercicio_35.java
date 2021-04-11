@@ -27,7 +27,7 @@ public class Ejercicio_35 {
 			System.out.println("Ingrese el nombre o [*] para salir");
 			nombre = input.nextLine();
 		}
-		
+
 		if (nomJoven.equals("")) {
 			System.out.println("No hubo ingresos");
 

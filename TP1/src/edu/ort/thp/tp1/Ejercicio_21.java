@@ -39,10 +39,8 @@ public class Ejercicio_21 {
 		default:
 			dia = "Entrada inválida";
 		}
-		
+
 		System.out.println(dia);
-		
-			
 
 	}
 

@@ -12,12 +12,11 @@ public class Ejercicio_33 {
 		double numMayor = 0;
 		double numMenor = 0;
 
-		
 		System.out.println("Ingrese un número o [0] para salir");
 		num = Integer.parseInt(input.nextLine());
-		
+
 		while (num != 0) {
-			
+
 			if (numMayor == 0 && numMenor == 0) {
 				numMayor = num;
 				numMenor = num;
@@ -31,7 +30,7 @@ public class Ejercicio_33 {
 			num = Integer.parseInt(input.nextLine());
 
 		}
-		
+
 		if (numMayor == 0) {
 			System.out.println("No se han ingresado números");
 		} else {
