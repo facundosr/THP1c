@@ -95,6 +95,8 @@ public class taxi {
 			System.out.println("el promedio de valor por viaje fue de $" + prom);
 			System.out.println("El porcentaje de viajes Cortos fue de " + porcentCorto + "%");
 			
+		} else {
+			System.out.println("No se hicieron viajes");
 		}
 	}
 
