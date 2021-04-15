@@ -44,7 +44,7 @@ public class Ejercicio_modelo {
 		System.out.println("Bienvenido!");
 		System.out.println();
 		System.out.println();
-
+  
 		do {
 			System.out.println("*** Destinos y precios ***");
 			System.out.println();
@@ -53,6 +53,7 @@ public class Ejercicio_modelo {
 					+ NOMBRE_DESTINO_2 + "($" + PRECIO_POR_PASAJERO_2 + ")\n" + "3 - " + NOMBRE_DESTINO_3 + "($"
 					+ PRECIO_POR_PASAJERO_3 + ")\n" + "4 - " + NOMBRE_DESTINO_4 + "($" + PRECIO_POR_PASAJERO_4 + ")\n"
 					+ "0 - " + "TERMINAR CARGA");
+			
 			System.out.println("Atención precio promocional a " + PAQUETE_PROMOCION);
 
 			System.out.print("Elija el paquete que desea adquirir o [0] para terminar la carga: ");

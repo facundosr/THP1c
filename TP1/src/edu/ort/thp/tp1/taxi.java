@@ -87,7 +87,7 @@ public class taxi {
 
 		if (cantViajes >= 1) {
 			prom = recTotal / cantViajes;
-			porcentCorto = cantC * 100 / cantViajes;
+			porcentCorto = cantC * 100 / cantViajes; 
 			System.out.println("Cantidad de viajes cortos : " + cantC);
 			System.out.println("Cantidad de viajes medianos : " + cantM);
 			System.out.println("Cantidad de viajes largos : " + cantL);
